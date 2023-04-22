@@ -1,0 +1,748 @@
+@import "helper/responsive";
+@import "helper/variables";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+body {
+  margin: 0;
+}
+#app {
+  font-family: "Noto Sans TC", sans-serif;
+  background: $background-default;
+  overflow-x: hidden;
+  .logo-block {
+    display: flex;
+    justify-content: center;
+    #top-logo {
+      width: 550px;
+      height: auto;
+      margin: 60px auto;
+    }
+  }
+  .popper {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: 70px;
+  }
+  #popper-right {
+    right: 0;
+  }
+  #popper-left {
+    left: 0;
+    transform: scaleX(-1);
+  }
+  .coupon-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    .text {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      .fan-title {
+        font-size: 90px;
+        line-height: 1;
+        margin-left: 75px;
+        color: $background-default;
+        text-shadow: rgb(89, 61, 53) 10px 0px 0px,
+          rgb(89, 61, 53) 9.95004px 0.998334px 0px,
+          rgb(89, 61, 53) 9.80067px 1.98669px 0px,
+          rgb(89, 61, 53) 9.55336px 2.9552px 0px,
+          rgb(89, 61, 53) 9.21061px 3.89418px 0px,
+          rgb(89, 61, 53) 8.77583px 4.79426px 0px,
+          rgb(89, 61, 53) 8.25336px 5.64642px 0px,
+          rgb(89, 61, 53) 7.64842px 6.44218px 0px,
+          rgb(89, 61, 53) 6.96707px 7.17356px 0px,
+          rgb(89, 61, 53) 6.2161px 7.83327px 0px,
+          rgb(89, 61, 53) 5.40302px 8.41471px 0px,
+          rgb(89, 61, 53) 4.53596px 8.91207px 0px,
+          rgb(89, 61, 53) 3.62358px 9.32039px 0px,
+          rgb(89, 61, 53) 2.67499px 9.63558px 0px,
+          rgb(89, 61, 53) 1.69967px 9.8545px 0px,
+          rgb(89, 61, 53) 0.707372px 9.97495px 0px,
+          rgb(89, 61, 53) -0.291995px 9.99574px 0px,
+          rgb(89, 61, 53) -1.28844px 9.91665px 0px,
+          rgb(89, 61, 53) -2.27202px 9.73848px 0px,
+          rgb(89, 61, 53) -3.2329px 9.463px 0px,
+          rgb(89, 61, 53) -4.16147px 9.09297px 0px,
+          rgb(89, 61, 53) -5.04846px 8.63209px 0px,
+          rgb(89, 61, 53) -5.88501px 8.08496px 0px,
+          rgb(89, 61, 53) -6.66276px 7.45705px 0px,
+          rgb(89, 61, 53) -7.37394px 6.75463px 0px,
+          rgb(89, 61, 53) -8.01144px 5.98472px 0px,
+          rgb(89, 61, 53) -8.56889px 5.15501px 0px,
+          rgb(89, 61, 53) -9.04072px 4.2738px 0px,
+          rgb(89, 61, 53) -9.42222px 3.34988px 0px,
+          rgb(89, 61, 53) -9.70958px 2.39249px 0px,
+          rgb(89, 61, 53) -9.89993px 1.4112px 0px,
+          rgb(89, 61, 53) -9.99135px 0.415807px 0px,
+          rgb(89, 61, 53) -9.98295px -0.583741px 0px,
+          rgb(89, 61, 53) -9.8748px -1.57746px 0px,
+          rgb(89, 61, 53) -9.66798px -2.55541px 0px,
+          rgb(89, 61, 53) -9.36457px -3.50783px 0px,
+          rgb(89, 61, 53) -8.96758px -4.4252px 0px,
+          rgb(89, 61, 53) -8.481px -5.29836px 0px,
+          rgb(89, 61, 53) -7.90968px -6.11858px 0px,
+          rgb(89, 61, 53) -7.25932px -6.87766px 0px,
+          rgb(89, 61, 53) -6.53644px -7.56803px 0px,
+          rgb(89, 61, 53) -5.74824px -8.18277px 0px,
+          rgb(89, 61, 53) -4.90261px -8.71576px 0px,
+          rgb(89, 61, 53) -4.00799px -9.16166px 0px,
+          rgb(89, 61, 53) -3.07333px -9.51602px 0px,
+          rgb(89, 61, 53) -2.10796px -9.7753px 0px,
+          rgb(89, 61, 53) -1.12153px -9.93691px 0px,
+          rgb(89, 61, 53) -0.123887px -9.99923px 0px,
+          rgb(89, 61, 53) 0.87499px -9.96165px 0px,
+          rgb(89, 61, 53) 1.86512px -9.82453px 0px,
+          rgb(89, 61, 53) 2.83662px -9.58924px 0px,
+          rgb(89, 61, 53) 3.77978px -9.25815px 0px,
+          rgb(89, 61, 53) 4.68517px -8.83455px 0px,
+          rgb(89, 61, 53) 5.54374px -8.32267px 0px,
+          rgb(89, 61, 53) 6.34693px -7.72764px 0px,
+          rgb(89, 61, 53) 7.0867px -7.0554px 0px,
+          rgb(89, 61, 53) 7.75566px -6.31267px 0px,
+          rgb(89, 61, 53) 8.34713px -5.50686px 0px,
+          rgb(89, 61, 53) 8.8552px -4.64602px 0px,
+          rgb(89, 61, 53) 9.27478px -3.73877px 0px,
+          rgb(89, 61, 53) 9.6017px -2.79415px 0px,
+          rgb(89, 61, 53) 9.83268px -1.82162px 0px,
+          rgb(89, 61, 53) 9.96542px -0.830894px 0px;
+      }
+      .price-title {
+        font-size: 160px;
+        margin-left: 105px;
+        color: #593d35;
+        letter-spacing: 0.05em;
+        font-weight: 700;
+        text-shadow: rgb(255, 255, 255) 8px 0px 0px,
+          rgb(255, 255, 255) 7.93758px 0.997398px 0px,
+          rgb(255, 255, 255) 7.7513px 1.97923px 0px,
+          rgb(255, 255, 255) 7.44406px 2.93018px 0px,
+          rgb(255, 255, 255) 7.02066px 3.8354px 0px,
+          rgb(255, 255, 255) 6.4877px 4.68078px 0px,
+          rgb(255, 255, 255) 5.85351px 5.45311px 0px,
+          rgb(255, 255, 255) 5.12797px 6.14035px 0px,
+          rgb(255, 255, 255) 4.32242px 6.73177px 0px,
+          rgb(255, 255, 255) 3.44941px 7.21814px 0px,
+          rgb(255, 255, 255) 2.52258px 7.59188px 0px,
+          rgb(255, 255, 255) 1.55638px 7.84714px 0px,
+          rgb(255, 255, 255) 0.565898px 7.97996px 0px,
+          rgb(255, 255, 255) -0.433417px 7.98825px 0px,
+          rgb(255, 255, 255) -1.42597px 7.87189px 0px,
+          rgb(255, 255, 255) -2.39627px 7.63269px 0px,
+          rgb(255, 255, 255) -3.32917px 7.27438px 0px,
+          rgb(255, 255, 255) -4.21013px 6.80256px 0px,
+          rgb(255, 255, 255) -5.02539px 6.22459px 0px,
+          rgb(255, 255, 255) -5.76223px 5.54948px 0px,
+          rgb(255, 255, 255) -6.40915px 4.78778px 0px,
+          rgb(255, 255, 255) -6.95606px 3.95136px 0px,
+          rgb(255, 255, 255) -7.39442px 3.05329px 0px,
+          rgb(255, 255, 255) -7.71739px 2.10757px 0px,
+          rgb(255, 255, 255) -7.91994px 1.12896px 0px,
+          rgb(255, 255, 255) -7.9989px 0.132735px 0px,
+          rgb(255, 255, 255) -7.95304px -0.865561px 0px,
+          rgb(255, 255, 255) -7.78307px -1.85035px 0px,
+          rgb(255, 255, 255) -7.49165px -2.80627px 0px,
+          rgb(255, 255, 255) -7.08333px -3.71839px 0px,
+          rgb(255, 255, 255) -6.56448px -4.57249px 0px,
+          rgb(255, 255, 255) -5.94318px -5.35524px 0px,
+          rgb(255, 255, 255) -5.22915px -6.05442px 0px,
+          rgb(255, 255, 255) -4.43352px -6.65912px 0px,
+          rgb(255, 255, 255) -3.5687px -7.15991px 0px,
+          rgb(255, 255, 255) -2.6482px -7.54898px 0px,
+          rgb(255, 255, 255) -1.68637px -7.82024px 0px,
+          rgb(255, 255, 255) -0.698222px -7.96947px 0px,
+          rgb(255, 255, 255) 0.300817px -7.99434px 0px,
+          rgb(255, 255, 255) 1.29516px -7.89446px 0px,
+          rgb(255, 255, 255) 2.2693px -7.67139px 0px,
+          rgb(255, 255, 255) 3.20802px -7.32862px 0px,
+          rgb(255, 255, 255) 4.09668px -6.87148px 0px,
+          rgb(255, 255, 255) 4.92142px -6.30711px 0px,
+          rgb(255, 255, 255) 5.66936px -5.64432px 0px,
+          rgb(255, 255, 255) 6.32883px -4.89346px 0px,
+          rgb(255, 255, 255) 6.88954px -4.06623px 0px,
+          rgb(255, 255, 255) 7.34274px -3.17555px 0px,
+          rgb(255, 255, 255) 7.68136px -2.23532px 0px,
+          rgb(255, 255, 255) 7.90012px -1.26021px 0px,
+          rgb(255, 255, 255) 7.9956px -0.265434px 0px;
+      }
+    }
+    .img {
+      position: relative;
+      margin-left: auto;
+      .circle {
+        position: absolute;
+        top: -50px;
+        left: -50px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: $brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          color: #fff;
+          font-size: 48px;
+        }
+      }
+    }
+  }
+  .product-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    .product-img-box {
+      width: calc(33% - 20px);
+      height: 270px;
+      border: #df6640 solid 5px;
+      margin: 10px 2.5px;
+      position: relative;
+      overflow: hidden;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        min-width: 100%;
+        min-height: 100%;
+        transform: translate(-50%, -50%);
+      }
+      .product-label {
+        font-size: 32px;
+        position: absolute;
+        top: 10px;
+        right: 0px;
+        color: #fff;
+        padding: 4px 18px 4px 14px;
+        background: #df6640;
+      }
+    }
+    .explanation {
+      width: calc(33% - 20px);
+      margin: 10px 2.5px;
+      .title {
+        margin-left: 10px;
+        font-size: 40px;
+        color: $background-default;
+        text-shadow: rgb(89, 61, 53) 5px 0px 0px,
+          rgb(89, 61, 53) 4.90033px 0.993347px 0px,
+          rgb(89, 61, 53) 4.60531px 1.94709px 0px,
+          rgb(89, 61, 53) 4.12668px 2.82321px 0px,
+          rgb(89, 61, 53) 3.48353px 3.58678px 0px,
+          rgb(89, 61, 53) 2.70151px 4.20736px 0px,
+          rgb(89, 61, 53) 1.81179px 4.6602px 0px,
+          rgb(89, 61, 53) 0.849836px 4.92725px 0px,
+          rgb(89, 61, 53) -0.145998px 4.99787px 0px,
+          rgb(89, 61, 53) -1.13601px 4.86924px 0px,
+          rgb(89, 61, 53) -2.08073px 4.54649px 0px,
+          rgb(89, 61, 53) -2.94251px 4.04248px 0px,
+          rgb(89, 61, 53) -3.68697px 3.37732px 0px,
+          rgb(89, 61, 53) -4.28444px 2.57751px 0px,
+          rgb(89, 61, 53) -4.71111px 1.67494px 0px,
+          rgb(89, 61, 53) -4.94996px 0.7056px 0px,
+          rgb(89, 61, 53) -4.99147px -0.291871px 0px,
+          rgb(89, 61, 53) -4.83399px -1.27771px 0px,
+          rgb(89, 61, 53) -4.48379px -2.2126px 0px,
+          rgb(89, 61, 53) -3.95484px -3.05929px 0px,
+          rgb(89, 61, 53) -3.26822px -3.78401px 0px,
+          rgb(89, 61, 53) -2.4513px -4.35788px 0px,
+          rgb(89, 61, 53) -1.53666px -4.75801px 0px,
+          rgb(89, 61, 53) -0.560763px -4.96845px 0px,
+          rgb(89, 61, 53) 0.437495px -4.98082px 0px,
+          rgb(89, 61, 53) 1.41831px -4.79462px 0px,
+          rgb(89, 61, 53) 2.34258px -4.41727px 0px,
+          rgb(89, 61, 53) 3.17346px -3.86382px 0px,
+          rgb(89, 61, 53) 3.87783px -3.15633px 0px,
+          rgb(89, 61, 53) 4.4276px -2.32301px 0px,
+          rgb(89, 61, 53) 4.80085px -1.39708px 0px,
+          rgb(89, 61, 53) 4.98271px -0.415447px 0px;
+      }
+      .price {
+        margin-left: 30px;
+        font-size: 64px;
+        color: #593d35;
+        font-weight: 700;
+        text-shadow: rgb(255, 255, 255) 5px 0px 0px,
+          rgb(255, 255, 255) 4.90033px 0.993347px 0px,
+          rgb(255, 255, 255) 4.60531px 1.94709px 0px,
+          rgb(255, 255, 255) 4.12668px 2.82321px 0px,
+          rgb(255, 255, 255) 3.48353px 3.58678px 0px,
+          rgb(255, 255, 255) 2.70151px 4.20736px 0px,
+          rgb(255, 255, 255) 1.81179px 4.6602px 0px,
+          rgb(255, 255, 255) 0.849836px 4.92725px 0px,
+          rgb(255, 255, 255) -0.145998px 4.99787px 0px,
+          rgb(255, 255, 255) -1.13601px 4.86924px 0px,
+          rgb(255, 255, 255) -2.08073px 4.54649px 0px,
+          rgb(255, 255, 255) -2.94251px 4.04248px 0px,
+          rgb(255, 255, 255) -3.68697px 3.37732px 0px,
+          rgb(255, 255, 255) -4.28444px 2.57751px 0px,
+          rgb(255, 255, 255) -4.71111px 1.67494px 0px,
+          rgb(255, 255, 255) -4.94996px 0.7056px 0px,
+          rgb(255, 255, 255) -4.99147px -0.291871px 0px,
+          rgb(255, 255, 255) -4.83399px -1.27771px 0px,
+          rgb(255, 255, 255) -4.48379px -2.2126px 0px,
+          rgb(255, 255, 255) -3.95484px -3.05929px 0px,
+          rgb(255, 255, 255) -3.26822px -3.78401px 0px,
+          rgb(255, 255, 255) -2.4513px -4.35788px 0px,
+          rgb(255, 255, 255) -1.53666px -4.75801px 0px,
+          rgb(255, 255, 255) -0.560763px -4.96845px 0px,
+          rgb(255, 255, 255) 0.437495px -4.98082px 0px,
+          rgb(255, 255, 255) 1.41831px -4.79462px 0px,
+          rgb(255, 255, 255) 2.34258px -4.41727px 0px,
+          rgb(255, 255, 255) 3.17346px -3.86382px 0px,
+          rgb(255, 255, 255) 3.87783px -3.15633px 0px,
+          rgb(255, 255, 255) 4.4276px -2.32301px 0px,
+          rgb(255, 255, 255) 4.80085px -1.39708px 0px,
+          rgb(255, 255, 255) 4.98271px -0.415447px 0px;
+      }
+    }
+  }
+  .info-block {
+    display: flex;
+    padding: 0 25px;
+    align-items: flex-end;
+    .open-bracket {
+      height: 250px;
+      &.right {
+        transform: scaleX(-1);
+      }
+    }
+    .info {
+      width: calc(50% - 100px);
+      &.left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        .hight-light {
+          margin: 10px auto;
+          color: $background-default;
+          font-size: 40px;
+          line-height: 58px;
+          letter-spacing: 0.15em;
+          text-shadow: rgb(223, 102, 64) 5px 0px 0px,
+            rgb(223, 102, 64) 4.90033px 0.993347px 0px,
+            rgb(223, 102, 64) 4.60531px 1.94709px 0px,
+            rgb(223, 102, 64) 4.12668px 2.82321px 0px,
+            rgb(223, 102, 64) 3.48353px 3.58678px 0px,
+            rgb(223, 102, 64) 2.70151px 4.20736px 0px,
+            rgb(223, 102, 64) 1.81179px 4.6602px 0px,
+            rgb(223, 102, 64) 0.849836px 4.92725px 0px,
+            rgb(223, 102, 64) -0.145998px 4.99787px 0px,
+            rgb(223, 102, 64) -1.13601px 4.86924px 0px,
+            rgb(223, 102, 64) -2.08073px 4.54649px 0px,
+            rgb(223, 102, 64) -2.94251px 4.04248px 0px,
+            rgb(223, 102, 64) -3.68697px 3.37732px 0px,
+            rgb(223, 102, 64) -4.28444px 2.57751px 0px,
+            rgb(223, 102, 64) -4.71111px 1.67494px 0px,
+            rgb(223, 102, 64) -4.94996px 0.7056px 0px,
+            rgb(223, 102, 64) -4.99147px -0.291871px 0px,
+            rgb(223, 102, 64) -4.83399px -1.27771px 0px,
+            rgb(223, 102, 64) -4.48379px -2.2126px 0px,
+            rgb(223, 102, 64) -3.95484px -3.05929px 0px,
+            rgb(223, 102, 64) -3.26822px -3.78401px 0px,
+            rgb(223, 102, 64) -2.4513px -4.35788px 0px,
+            rgb(223, 102, 64) -1.53666px -4.75801px 0px,
+            rgb(223, 102, 64) -0.560763px -4.96845px 0px,
+            rgb(223, 102, 64) 0.437495px -4.98082px 0px,
+            rgb(223, 102, 64) 1.41831px -4.79462px 0px,
+            rgb(223, 102, 64) 2.34258px -4.41727px 0px,
+            rgb(223, 102, 64) 3.17346px -3.86382px 0px,
+            rgb(223, 102, 64) 3.87783px -3.15633px 0px,
+            rgb(223, 102, 64) 4.4276px -2.32301px 0px,
+            rgb(223, 102, 64) 4.80085px -1.39708px 0px,
+            rgb(223, 102, 64) 4.98271px -0.415447px 0px;
+        }
+        .detail {
+          font-size: 30px;
+          line-height: 43px;
+          margin: 10px auto;
+        }
+        .plus {
+          width: 25px;
+          height: 25px;
+          margin: 5px auto;
+        }
+      }
+      &.right {
+        .header {
+          display: flex;
+          align-items: center;
+          img {
+            width: 60px;
+            height: 60px;
+          }
+          span {
+            margin-left: 15px;
+            font-size: 30px;
+            line-height: 43px;
+          }
+        }
+        .content {
+          margin: 15px auto 15px 75px;
+          font-size: 20px;
+          line-height: 29px;
+        }
+      }
+    }
+  }
+  .form-block {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 25px;
+    .col {
+      width: 50%;
+      &:nth-child(even) {
+        .form-control {
+          .label {
+            margin-left: 25px;
+          }
+        }
+      }
+    }
+    .address-row {
+      width: 100%;
+    }
+
+    .form-control {
+      display: flex;
+      margin: 15px auto;
+      .label {
+        font-size: 30px;
+        line-height: 43px;
+        min-width: 160px;
+      }
+      #input-name,
+      #input-phone,
+      #input-mail,
+      #input-line,
+      #input-contact-phone,
+      #input-city {
+        width: 100%;
+        // max-width: 450px;
+      }
+      #input-address {
+        width: calc(100%);
+      }
+    }
+  }
+  .send-block {
+    text-align: center;
+    margin: 10px auto 20px;
+    .btn-send {
+      width: 275px;
+      background: #593d35;
+      border-radius: 50px;
+      padding: 18px 0;
+      font-size: 30px;
+      line-height: 43px;
+      letter-spacing: 0.15em;
+      color: #ffffff;
+      border: none;
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+  .footer {
+    background: #df6640;
+    padding: 30px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 0.15em;
+    color: #000000;
+    .type {
+      display: flex;
+      .social {
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+        text-decoration: none;
+        color: #000000;
+        img {
+          width: 40px;
+          height: 40px;
+        }
+        span {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    .popper {
+      width: 200px;
+    }
+    .coupon-block {
+      .text {
+        width: 60%;
+        .fan-title {
+          font-size: 60px;
+        }
+
+        .price-title {
+          font-size: 120px;
+        }
+      }
+      .img {
+        width: 40%;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+    .product-block {
+      .explanation {
+        .title {
+          font-size: 34px;
+        }
+        .price {
+          font-size: 44px;
+        }
+      }
+    }
+    .info-block {
+      .info {
+        &.left {
+          .hight-light {
+            font-size: 34px;
+          }
+          .detail {
+            font-size: 24px;
+          }
+        }
+        &.right {
+          .header {
+            img {
+              width: 45px;
+              height: 45px;
+            }
+            span {
+              font-size: 24px;
+            }
+          }
+          .content {
+            margin: 5px auto 5px 75px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .footer {
+      .title {
+        display: none;
+      }
+      .type {
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: 769px) {
+    .logo-block {
+      #top-logo {
+        width: 300px;
+      }
+    }
+    #popper-right {
+      top: 180px;
+    }
+    #popper-left {
+      top: 320px;
+    }
+    .coupon-block {
+      flex-direction: column;
+      justify-content: center;
+      .text {
+        justify-content: center;
+        width: 100%;
+        .fan-title {
+          font-size: 40px;
+          // margin-left: 0;
+        }
+
+        .price-title {
+          font-size: 60px;
+          // margin-left: 0;
+        }
+      }
+      .img {
+        margin: 20px 25px 20px auto;
+        .circle {
+          top: -25px;
+          left: -25px;
+          width: 50px;
+          height: 50px;
+          span {
+            font-size: 24px;
+          }
+        }
+        img {
+          margin-left: auto;
+        }
+      }
+    }
+    .product-block {
+      .product-img-box {
+        width: calc(100%);
+        .product-label {
+          font-size: 20px;
+        }
+      }
+      .explanation {
+        width: calc(100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .title {
+          font-size: 28px;
+        }
+
+        .price {
+          margin-left: 10px;
+          font-size: 38px;
+        }
+      }
+    }
+    .info-block {
+      flex-wrap: wrap;
+      .open-bracket {
+        display: none;
+      }
+      .info {
+        width: 100%;
+        &.right {
+          .header {
+            justify-content: center;
+            margin: 10px auto;
+          }
+          .content {
+            text-align: center;
+            margin: auto;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    .form-block {
+      .col {
+        width: 100%;
+        &:nth-child(even) {
+          .form-control {
+            .label {
+              margin-left: 0px;
+            }
+          }
+        }
+      }
+      .form-control {
+        flex-direction: column;
+        margin: 5px auto;
+        .label {
+          width: 100%;
+          margin-left: 0;
+          margin-bottom: 5px;
+        }
+        #input-name,
+        #input-phone,
+        #input-mail,
+        #input-line,
+        #input-contact-phone,
+        #input-city,
+        #input-address {
+          height: 40px;
+          max-width: 100%;
+        }
+      }
+    }
+    .send-block {
+      .btn-send {
+        width: 175px;
+        font-size: 24px;
+        line-height: 35px;
+      }
+    }
+    .footer {
+      .type {
+        .social {
+          // margin-left: 5px;
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 540px) {
+    #popper-right {
+      display: none;
+    }
+    #popper-left {
+      display: none;
+    }
+    .coupon-block {
+      .text {
+        width: 100%;
+        .fan-title {
+          margin: auto;
+        }
+
+        .price-title {
+          margin: auto;
+        }
+      }
+      .img {
+        margin: 20px auto;
+        width: 80%;
+      }
+    }
+    .product-block {
+      .explanation {
+        flex-direction: column;
+      }
+    }
+    .info-block {
+      .info {
+        &.left {
+          .hight-light {
+            font-size: 30px;
+          }
+          .detail {
+            font-size: 20px;
+          }
+          .plus {
+            width: 15px;
+            height: 15px;
+            margin: 0px auto;
+          }
+        }
+        &.right {
+          .content {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .form-block {
+      .form-control {
+        .label {
+          font-size: 20px;
+          margin-bottom: 0px;
+        }
+      }
+    }
+    .send-block {
+      .btn-send {
+        padding: 8px;
+      }
+    }
+    .footer {
+      font-size: 18px;
+    }
+  }
+}
